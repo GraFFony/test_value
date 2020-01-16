@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="media/style.css">
+    <meta charset="UTF-8">
+    <title>Тест</title>
+</head>
+<body onload="onLoadFunc()">
+    <main>
+        <div class="background-reg">
+            <div class="language rus" onclick="langchange()"></div>
+        </div>
+        <div class="main-form">
+            <div class="register-first form">
+                <form name="reg_form_first">
+                    <div><h1>Регистрация</h1></div>
+                    <input type="text" id="login" name="login" required>
+                    <label for="login">Логин</label>
+                    <input type="password" id="password" name="pass" required>
+                    <label for="password">Пароль</label>
+                    <input type="button" onclick="register(1)" value="Регистрация">
+                    <input type="button" onclick="entermenu()" value="Войти">
+                </form>
+            </div>
+            <div class="register-second form none-vis">
+                <div class="blop-block"><h1>Регистрация</h1></div>
+                <form class="form_second" name="reg_form_second">
+                    <input type="email" id="email" name="login"  required>
+                    <label for="email">Почта</label>
+                    <input type="file" id="photo">
+                    <label for="photo">Фото</label>
+                </form>
+                <form class="form_about form_second" name="reg_form_second">
+                    <textarea id="about"></textarea>
+                    <label for="about">О себе</label>
+                </form>
+                <div class="blop-blop"><input type="button" onclick="register(2)" value="Зарегистрироваться"></div>
+            </div>
+            <div class="enter-first form none-vis">
+                <form>
+                    <div><h1>Вход</h1></div>
+                    <input type="text" id="login_enter">
+                    <label for="login_enter">Логин</label>
+                    <input type="password" id="password_enter">
+                    <label for="password_enter">Пароль</label>
+                    <input type="button" onclick="enter()" value="Войти">
+                    <input type="button" onclick="regmenu()" value="Зарегистрироваться">
+                </form>
+            </div>
+            <div class="enter-second form none-vis">
+                <div class="left-enter">
+                    <div id="log"></div>
+                    <div id="photos"></div>
+                </div>
+                <div class="right-enter">
+                    <div id="aboutt"></div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <div class="block-alert">
+        <div class="info-error">123</div>
+        <div class="main-info-error">321</div>
+    </div>
+<script src="scripts/main.js"></script>
+<script src="scripts/animation.js"></script>
+</body>
+</html>

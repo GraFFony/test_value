@@ -1,0 +1,207 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: WebFont;
+    overflow: hidden;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+}
+.background-reg{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("images/iCg.gif");
+    background-size: contain;
+    background-repeat: repeat;
+}
+.main-form{
+    box-shadow: 29px 25px 64px 0 #000000;
+    opacity: 0;
+    transition: 0.5s;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    height: 80%;
+    width: 30%;
+    min-width: 400px;
+    background-color: ghostwhite;
+    z-index: 10;
+    border-radius: 10px;
+}
+.form{
+    margin-top: 10%;
+    height: 80%;
+    transition: 0.8s;
+}
+.none-vis{
+    display: none;
+    opacity: 0;
+}
+.language{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-size: cover;
+    background-color: ghostwhite;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.rus{
+    background-image: url("images/ru.jpg");
+}
+.rus:hover{
+    background-image: url("images/eng.jpg");
+}
+.eng{
+    background-image: url("images/eng.jpg");
+}
+.eng:hover{
+    background-image: url("images/ru.jpg");
+}
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+.back-form{
+    box-shadow: 29px 25px 64px 0 #000000;
+    opacity: 0;
+    transition: 1.5s;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    height: 80%;
+    width: 30%;
+    background-color: ghostwhite;
+    z-index: 1;
+}
+.form_second{
+    width: 50%;
+    height: 80%;
+}
+.blop-block {
+    display: flex;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    justify-content: center;
+    height: 10%;
+    margin-left: auto;
+}
+.blop-blop{
+    display: flex;
+    justify-content: center;
+    height: 10%;
+    position: relative;
+    top: -80%;
+    margin-left: auto;
+}
+.block-alert{
+    opacity: 0;
+    transition: 0.5s;
+    position: absolute;
+    z-index: 100;
+    width: 400px;
+    height: 400px;
+    background-color: ghostwhite;
+    top: calc(50% - 200px);
+    left: calc(50% - 200px);
+    box-shadow: 0px 0px 1px 100000px  rgba(0, 0, 0, .8);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+.info-error{
+    margin-top: 50px;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.main-info-error{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+    font-size: 18px;
+}
+.form_about{
+    position: relative;
+    top: -80%;
+    left: 50%;
+}
+.left-enter{
+    width: 50%;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img{
+    margin-top: 10px;
+    border: 1px solid black;
+}
+#log{
+    font-size: 25px;
+}
+.right-enter{
+    text-align: justify;
+    width: 50%;
+    position: relative;
+    height: 100%;
+    left: 50%;
+    top: -100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input[type='text'] , input[type='password'] , input[type='button'], input[type='email'], input[type='file'], textarea {
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 0 0 10px 0;
+    border: 1px solid gray;
+    font-size: 17px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+input[type='file'] {
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+input[type='button']{
+    font-family: WebFont;
+    font-size: 14px;
+    padding: 0;
+}
+textarea{
+    height: 90%;
+    padding-top: 30px;
+}
+textarea + label {
+    top: calc(-85% + -10px);
+}
+textarea:focus + label {
+    top: calc(-95% + -10px);
+    opacity: 0;
+}
+input:focus + label{
+    top: -90px;
+
+}
+label{
+    transition: 1s;
+    position: relative;
+    top: -70px;
+    left: -60px;
+    color: gray;
+}
+@font-face {
+    font-family: "WebFont";
+    src: url("18386.ttf");
+}
