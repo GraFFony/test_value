@@ -1,6 +1,8 @@
+//константа чтобы проще былы объявлять элементы
 const $ = (el) => document.querySelector(el);
-
+//язык
 let lang = 'ru';
+//функция плавного появления
 function onLoadFunc() {
     $('.main-form').style.opacity = '1';
 }
@@ -102,6 +104,8 @@ function langchange() {
             '</form>';
     }
 }
+
+//функция кастомного алерта
 function alertt(x, y, z) {
     $('.block-alert').style.display = 'flex';
     $('.info-error').innerText = x;

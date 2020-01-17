@@ -7,11 +7,11 @@
 </head>
 <body onload="onLoadFunc()">
     <main>
-        <div class="background-reg">
-            <div class="language rus" onclick="langchange()"></div>
+        <div class="background-reg"> <!-- задник -->
+            <div class="language rus" onclick="langchange()"></div>  <!-- переключалка языка -->
         </div>
-        <div class="main-form">
-            <div class="register-first form">
+        <div class="main-form"> <!-- главный блок -->
+            <div class="register-first form"> <!--1 форма регистрации -->
                 <form name="reg_form_first">
                     <div><h1>Регистрация</h1></div>
                     <input type="text" id="login" name="login" required>
@@ -22,7 +22,7 @@
                     <input type="button" onclick="entermenu()" value="Войти">
                 </form>
             </div>
-            <div class="register-second form none-vis">
+            <div class="register-second form none-vis">  <!--2 форма регистрации -->
                 <div class="blop-block"><h1>Регистрация</h1></div>
                 <form class="form_second" name="reg_form_second">
                     <input type="email" id="email" name="login"  required>
@@ -36,7 +36,7 @@
                 </form>
                 <div class="blop-blop"><input type="button" onclick="register(2)" value="Зарегистрироваться"></div>
             </div>
-            <div class="enter-first form none-vis">
+            <div class="enter-first form none-vis">   <!-- форма входа -->
                 <form>
                     <div><h1>Вход</h1></div>
                     <input type="text" id="login_enter">
@@ -47,7 +47,7 @@
                     <input type="button" onclick="regmenu()" value="Зарегистрироваться">
                 </form>
             </div>
-            <div class="enter-second form none-vis">
+            <div class="enter-second form none-vis"> <!-- профиль -->
                 <div class="left-enter">
                     <div id="log"></div>
                     <div id="photos"></div>
@@ -59,10 +59,11 @@
         </div>
 
     </main>
-    <div class="block-alert">
+    <div class="block-alert">   <!-- блок с инфой об ошибках -->
         <div class="info-error">123</div>
         <div class="main-info-error">321</div>
     </div>
+    <!-- тут скрипты -->
 <script src="scripts/main.js"></script>
 <script src="scripts/animation.js"></script>
 </body>

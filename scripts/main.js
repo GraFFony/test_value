@@ -101,6 +101,8 @@ function register(x) {
         }, 801);
     }
 }
+
+//отправка данных регистрации на сервер
 async function finish() {
     let data = new FormData;
     data.append('logine',  reg_login);
@@ -120,6 +122,7 @@ async function finish() {
             alertt( 'Error', 'Sorry, but this login is already used', 2);
     }
 }
+//отправка данных на сервер для авторизации
  async  function enter() {
     let data = new  FormData;
     data.append('login', $('#login_enter').value);
@@ -152,5 +155,4 @@ async function finish() {
          }, 801);
 
      }
- //   change_prof(); //из анимаций
 }
